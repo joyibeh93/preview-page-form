@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>STUDENT REGISTRATION FORM</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="form-details">
+        <div class="form-header">
+          <div class="img-logo">
+            <img src="./image/images.png" alt="logo" class="logo" />
+          </div>
+          <div class="header-content">
+            <h1>Student Registration Form</h1>
+            <p>
+              Fill out the form to apply for the training courses. You can
+              consider your application accepted affer you recieve a
+              confirmation email
+            </p>
+          </div>
+        </div>
+        <form class="registration-form" id="registration-form">
+          <label for="student-info" class="student-info">
+            Student Information
+          </label>
+          <div class="student-name">
+            <input
+              type="text"
+              placeholder="First Name"
+              id="firstName"
+              class="student-details"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Middle Name"
+              id="middleName"
+              class="student-details"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              id="lastName"
+              class="student-details"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="date"
+              placeholder="Date of Birth"
+              id="DOB"
+              class="student-id"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Student ID"
+              id="studentId"
+              class="student-id"
+              required
+            />
+          </div>
+          <label for="address" class="student-info">Address</label> <br />
+          <input
+            type="text"
+            placeholder="street address"
+            class="address"
+            id="address"
+          />
+          <div>
+            <input type="text" placeholder="city" class="student-id" />
+            <input
+              type="text"
+              placeholder="state/province"
+              class="student-id"
+              id="state"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="country"
+              class="student-id"
+              id="country"
+            />
+            <input
+              type="number"
+              placeholder="zip code"
+              class="student-id"
+              id="zipcode"
+            />
+          </div>
+          <label for="contact-info" class="student-info">
+            Contact Information</label
+          >
+          <div>
+            <input
+              type="email"
+              placeholder="Email"
+              class="student-id"
+              id="email"
+            />
+            <input type="text" class="student-id" />
+          </div>
+          <label for="Courses" class="student-info">Courses</label>
+          <span class="asterisks"> *</span>
+          <div class="course-info">
+            <button class="btn">+ Add new record</button>
+
+            <div class="select-option">
+              <p class="select">
+                <select id="course" name="course" id="course" required>
+                  <option value="">Course</option>
+                  <option value="Frontend">Frontend</option>
+                  <option value="Backend">Backend</option>
+                  <option value="UI/UX">UI/UX</option>
+                  <option value="Data-Analytics">Data Analytics</option>
+                  <option value="Data-Science">Data Science</option>
+                </select>
+              </p>
+
+              <p></p>
+              <p class="select">
+                <select id="level" name="level" id="level" required>
+                  <option value="">Level</option>
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </select>
+              </p>
+              <p class="select">
+                <select name="Language" id="language" required>
+                  <option value="">Language</option>
+                  <option value="English">English</option>
+                  <option value="french">French</option>
+                  <option value="Spainish>">Spainish</option>
+                </select>
+              </p>
+              <p class="select">
+                <select name="Language" id="startdate" required>
+                  <option value="">Start Date</option>
+                  <option value="15/06/2023">15/06/2023</option>
+                  <option value="15/07/2023">15/07/2023</option>
+                  <option value="15/08/2023">15/08/2023</option>
+                </select>
+              </p>
+            </div>
+          </div>
+          <br />
+          <div class="textarea">
+            <textarea name="comment" id="" cols="30" rows="10"></textarea><br />
+          </div>
+
+          <button class="btn-submit">send Request</button>
+        </form>
+
+        <!-- <div id="previewPage" class="previewPage">
+                <div class="container">
+                  <div id="previewData"></div>
+                </div>
+            </div> -->
+        <div id="preview" class="preview">
+          <h2 class="preview-heading">Preview your details</h2>
+          <span class="preview-label">First-Name:</span>
+          <span id="preview-firstname" class="preview-data"></span>
+          <br /><br />
+          <span class="preview-label">Middle Name:</span>
+          <span id="preview-middleName" class="preview-data"></span>
+          <br /><br />
+          <span class="preview-label">lastName</span>
+          <span id="preview-lastName" class="preview-data"></span>
+          <br /><br />
+          <span class="preview-label">DOB</span>
+          <span id="preview-DOB" class="preview-data"></span>
+          <br /><br />
+          <span class="preview-label">studentId:</span>
+          <span id="preview-studentId" class="preview-data"></span>
+          <br /><br />
+          <span class="preview-label">address:</span>
+          <span id="preview-address" class="preview-data"></span>
+          <br /><br />
+          <span class="preview-label">state:</span>
+          <span id="preview-state" class="preview-data"></span>
+          <br /><br />
+          <span class="preview-label">country:</span>
+          <span id="preview-country" class="preview-data"></span>
+          <br /><br />
+          <span class="preview-label">zipcode:</span>
+          <span id="preview-zipcode" class="preview-data"></span>
+          <br /><br />
+          <span class="preview-label">email:</span>
+          <span id="preview-email" class="preview-data"></span>
+          <br /><br />
+          <span class="preview-label">Course:</span>
+          <span id="preview-course" class="preview-data"></span>
+          <br /><br />
+          <span class="preview-label">level:</span>
+          <span id="preview-level" class="preview-data"></span>
+          <br /><br />
+          <span class="preview-label">language:</span>
+          <span id="preview-language" class="preview-data"></span>
+          <br /><br />
+          <span class="preview-label">startdate:</span>
+          <span id="preview-startdate" class="preview-data"></span>
+          <br /><br />
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #eeeeee31;
+}
+.container{
+    display: block;
+    max-width: 850px;
+    margin: 40px auto;
+    border: 1px solid #ccc;
+    padding: 5px 30px;
+}
+.form-header{
+    display: flex;
+    margin: 5px 10px ;
+}
+.img-logo img{
+    width: 120px;
+    display: block;
+    margin-top: -5px;
+}
+.form-header p{
+    font-size: 80%;
+}
+.header-content{
+    margin-top: 10px;
+    line-height: 1.5em;
+}
+/* styling the form */
+.registration-form{
+    margin-top: 20px;
+}
+.student-info{
+    font-size: 120%;
+    font-weight:600;
+}
+
+.student-details,.student-id,.address{
+    width: 250px;
+    padding: 8px 5px;
+    margin: 5px 0px;
+}
+.student-id{
+    width: 377px;
+}
+.address{
+width: 756px;
+}
+.asterisks{
+    color: red;
+    font-weight: bold;
+    font-size: 110%;
+}
+.course-info{
+    background-color: #eeeeeebb;
+    border: 1px sold #eee;
+    width: 750px;
+    padding: 10px;
+}
+.btn{
+    display: block;
+    padding: 10px 16px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    background-color: rgba(218, 212, 212, 0.74);
+    border: 0;
+}
+.select-option{
+    display: flex;
+    border: 1px solid rgba(196, 192, 192, 0.74);
+    padding: 5px 0px;
+}
+.select select{
+    padding: 6px 10px;
+    border: 1px solid rgba(196, 192, 192, 0.74);
+    background-color:#eee; ;
+}
+.textarea textarea{
+    width: 750px;
+}
+.btn-submit{
+    display: block;
+    width: 750px;
+    padding: 10px 0;
+    margin: 20px 0px;
+    text-transform: uppercase;
+    background-color: rgb(17, 167, 236);
+    color: #fff;
+    border-radius: 3px;
+    border: 0;
+}
+.preview{
+    display:none;
+}
+.preview-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 40px 0px;
+
+  }
+  
+  .preview-label {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+ 
